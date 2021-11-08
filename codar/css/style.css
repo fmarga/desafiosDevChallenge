@@ -1,0 +1,369 @@
+/* gerais */
+:root {
+    --textcolor: #D6000D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--textcolor);
+    flex: 1;
+}
+
+.logo span {
+    color: #000;
+}
+
+.menu  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    flex: 1;
+}
+
+.menu ul li {
+    display: block; /* pra quando estiver no mobile ficar um em cima do outro */ 
+    padding: 8px 30px;
+    margin: auto 5px;
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+.menu li:nth-child(4) {
+    background-color: var(--textcolor);
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* info principal */
+.inicio-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 100px;
+    max-width: 900px;
+}
+
+.img-videocall img {
+    max-width: 500px;
+    padding: 50px;
+    flex: 1;
+}
+
+.info-principal p {
+    font-size: 1.1em;
+    font-weight: bold;
+    flex: 1;
+}
+
+.info-principal h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--textcolor);
+    margin: 10px 0 40px 0;
+    line-height: 1em;
+    letter-spacing: 1.5px;
+    flex: 1;
+}
+
+.info-principal .cta {
+    background-color: var(--textcolor);
+    color: #fff;
+    font-size: 1em;
+    font-weight: lighter;
+    border: 0;
+    border-radius: 8px;
+    padding:  10px 40px;
+    margin-top: 30px;
+    flex: 1;
+}
+
+/* lista de vantagens */
+.info-geral {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}   
+
+.lista ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+.lista ul li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/check-circle-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.img1 img {
+    max-width: 600px;
+    padding: 50px;
+    margin: 50px;
+}
+
+/* contato */
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto auto 200px 100px;
+    max-width: 500px;
+}
+
+.contato p {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.contato-cel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contato-cel input {
+    background: rgb(220, 220, 220);
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.contato-cel button {
+    background-color: var(--textcolor);
+    color: #fff;
+    font-size: 1em;
+    font-weight: lighter;
+    border: 0;
+    border-radius: 8px;
+    padding:  10px 40px;
+}
+/* depoimentos */
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.text-1 {
+    background-color: rgb(220, 220, 220);
+    width: 500px;
+    height: 160px;
+    border-radius: 8px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.perfil::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--textcolor);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.texto {
+    margin: 20px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.texto p:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 0 0 0;
+}
+
+.texto p:nth-child(3) {
+    font-weight: lighter;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+    padding: 50px;
+    margin: auto;
+    color: #fff;
+}
+
+.ft-logo, .ft-sobre, .ft-contato, .ft-redes {
+    margin-bottom: 30px;
+}
+
+.ft-logo h3 {
+    font-size: 2.2em;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.ft-sobre::first-line {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.5;
+    margin-bottom: 30px;
+}
+
+.ft-contato p {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+.ft-contato ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.ft-contato a {
+    color: #fff;
+}
+
+.ft-redes p {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+.ft-redes ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.ft-redes img {
+    max-width: 40px;
+    color: var(--textcolor);
+}
+
+/* responsividade */
+
+@media (max-width: 375px) {
+
+    /* header */
+    .header-container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .menu ul {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .menu li:nth-child(4) {
+        display: none;
+    }
+
+    /* info principal */
+    .inicio-info {
+        flex-direction: column;
+    }
+
+    .img-videocall img {
+        width: 400px;
+    }
+
+    .info-principal .cta {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* lista de vantagens */
+    .info-geral {
+        flex-direction: column;
+    }
+
+    .lista ul {
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        order: 1;
+
+    }
+
+    .img1 {
+        order: -1;
+    }
+
+    .img1 img {
+        width: 400px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    /* contato */
+
+    .contato {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .contato-cel input, .contato-cel button {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* depoimentos */
+    .depoimentos {
+        width: 100%;
+    }
+
+    /* footer */
+    .ft-logo {
+        align-self: center;
+    }
+
+    .ft-redes {
+        display: block;
+    }
+}
